@@ -56,7 +56,7 @@ class wsample:
         # Draw from the binary mixture, either keeping the
         # small one, or choosing the associated larger one.
         
-        if rand() < self.q[kk]:
+        if random.rand() < self.q[kk]:
             return self.keys[kk]
         else:
             return self.keys[self.J[kk]]
